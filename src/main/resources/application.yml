@@ -1,0 +1,11 @@
+resilience4j:
+  ratelimiter:
+    instances:
+      # RateLimiter object used in RateLimitingService.basicExample()
+      basic:
+        limitForPeriod: 1
+        limitRefreshPeriod: 1m
+        timeoutDuration: 6s
+
+server:
+  port: 9090
